@@ -1,0 +1,199 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+a,
+li {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  margin: 1%;
+}
+
+html,
+body {
+  height: auto;
+  width: 100%;
+  font-size: 1em;
+  background-color: black;
+}
+
+.grid {
+  display: grid;
+  height: auto;
+  grid-template-rows: repeat(4, 1fr, 0.5fr, 0.5fr, 2fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1%;
+}
+
+.box {
+  background-color: #023a77;
+  color: black;
+  border-radius: 5px;
+  border: 1px dotted #000000;
+  opacity: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.a {
+  grid-template-rows: 1 / span 2;
+  grid-template-columns: 1 / span 2;
+  grid-column: 1;
+  grid-row: 1 / span 1;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.b {
+  grid-template-rows: 2 / span 4;
+  grid-template-columns: 3 / span 4;
+  grid-column: 2 / span 3;
+  grid-row: 1 / span 1;
+  display: flex;
+  align-items: center;
+  background-image: url(../assets/captain-sitting.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  height: 100%;
+}
+
+.c p {
+  padding: 3%;
+}
+
+.d p {
+  padding: 3%;
+}
+
+.e p {
+  padding: 3%;
+}
+
+.c {
+  grid-template-rows: 1 / span 1;
+  grid-template-columns: 3 / span 6;
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  display: flex;
+}
+
+.d {
+  grid-template-rows: 1 / span 1;
+  grid-template-columns: 3 / span 6;
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 2;
+}
+
+.e {
+  grid-template-rows: 1 / span 1;
+  grid-template-columns: 3 / span 6;
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 1;
+  display: flex;
+}
+
+.f {
+  grid-template-rows: 2 / span 4;
+  grid-template-columns: 3 / span 4;
+  grid-column: 2 / span 3;
+  grid-row: 3 / span 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  display: flex;
+}
+
+img.biosquare {
+  border-radius: 50%;
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 5% auto;
+}
+
+#bodycontainer {
+  width: 100%;
+  height: auto;
+}
+
+img.project {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+img.running {
+  width: 100%;
+  height: auto;
+  display: block;
+  align-items: center;
+  margin-bottom: 0;
+  padding: 0;
+  top: 0;
+  margin: 0;
+  border-radius: 2%;
+  overflow: hidden;
+}
+
+button {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  font-size: 1em;
+  background-color: #0f5289;
+  color: white;
+  padding: 3%;
+  cursor: pointer;
+  text-align: center;
+}
+
+.gif-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: auto;
+  }
+
+  .a {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .b {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .c {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .d {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .e {
+    grid-column: 1;
+    grid-row: 5;
+  }
+}
